@@ -127,6 +127,7 @@ fun ScreenShareView(
             modifier = modifier.fillMaxSize()
         ) {
             Text(text =  "${(fpsaccuracy(framemodel.framesPerSecData) / 30.0 * 100.0).toInt()}%", fontSize = 32.sp)
+            
             Image(
                 bitmap = modelstate.ImageShared.asImageBitmap(),
                 contentDescription = null,
